@@ -1,0 +1,39 @@
+features : 
+- auth 
+- home
+
+home page: 
+    fetch aya from api (text , aya-num , sura-num)
+
+    - display ayah
+    - record sound : 
+        for ayah ( time = [1s-10s] ) 
+        when click start recording
+        if recording and  click other time finish recording
+        when finish show button to preview , submit , delete
+
+
+
+
+routes : 
+ origin/  => landing page show infos
+ origin/login => login 
+ origin/register => register 
+
+ origin/home => home page
+
+
+state :
+    auth slice 
+    record slice 
+
+
+
+
+
+
+
+
+
+
+

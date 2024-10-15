@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: white;
+  color: black;
+}
+nav a.active {
+  color: #4ade80;
+}
+
+@font-face {
+  font-family: "Quran_font";
+  src: url("/assets/UthmanicHafs.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.audio-recorder .audio-recorder-mic[title="Save recording"] {
+  display: none;
+}
+
+button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:active {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.1
+  ); /* Change this to the desired splash color */
+  transform: scale(0.95); /* Adjust the scale factor as needed */
+}
