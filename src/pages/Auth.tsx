@@ -52,7 +52,7 @@ const Auth: React.FC = () => {
     myHeaders.append("Content-Type", "application/json");
 
     const promise = fetch(
-      "https://irtaqi-api-gngp.onrender.com/api/v1/auth/login",
+      "https://irtaqi-api-gngp.onrender.com/api/v1api/v1/auth",
       {
         method: "POST",
         headers: myHeaders,
