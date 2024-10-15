@@ -51,17 +51,14 @@ const Auth: React.FC = () => {
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
 
-    const promise = fetch(
-      "https://irtaqi-api-gngp.onrender.com/api/v1api/v1/auth",
-      {
-        method: "POST",
-        headers: myHeaders,
-        body: JSON.stringify({
-          email,
-        }),
-        redirect: "follow",
-      }
-    )
+    const promise = fetch("https://irtaqi-api-gngp.onrender.com/api/v1/auth", {
+      method: "POST",
+      headers: myHeaders,
+      body: JSON.stringify({
+        email,
+      }),
+      redirect: "follow",
+    })
       .then((response) => response.text())
       .then((result) => cb(result))
       .catch((error) => {
