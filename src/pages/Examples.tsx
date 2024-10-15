@@ -30,7 +30,7 @@ export default function HomePage() {
 
   useEffect(() => {
     fetch(
-      `https://irtqai-api.onrender.com/api/v1/verse?hokm=${selectedHokm}`,
+      `https://irtaqi-api-gngp.onrender.com/api/v1/verse?hokm=${selectedHokm}`,
       {
         method: "GET",
         headers: {
@@ -51,15 +51,12 @@ export default function HomePage() {
 
   const handleDelete = (exampleId: number): void => {
     setDeleting(true);
-    fetch(
-      `https://irtqai-api.onrender.com/api/v1/verse/${exampleId}`,
-      {
-        headers: {
-          Authorization: "Bearer " + StorageService.get(TOKEN_KEY),
-        },
-        method: "DELETE",
-      }
-    )
+    fetch(`https://irtaqi-api-gngp.onrender.com/api/v1/verse/${exampleId}`, {
+      headers: {
+        Authorization: "Bearer " + StorageService.get(TOKEN_KEY),
+      },
+      method: "DELETE",
+    })
       .then((response) => {
         if (response.status === 204) {
           toast.success("تم حذف المثال بنجاح");

@@ -33,16 +33,13 @@ export const submitVerseRecord = createAsyncThunk(
           formData.append("TOrder", record.TOrder ?? "مجهول");
         }
 
-        fetch(
-          "https://irtqai-api.onrender.com/api/v1/verse-audio",
-          {
-            method: "POST",
-            body: formData,
-            headers: {
-              Authorization: "Bearer " + StorageService.get(TOKEN_KEY),
-            },
-          }
-        )
+        fetch("https://irtaqi-api-gngp.onrender.com/api/v1/verse-audio", {
+          method: "POST",
+          body: formData,
+          headers: {
+            Authorization: "Bearer " + StorageService.get(TOKEN_KEY),
+          },
+        })
           .then((res: Response) => {
             if (!res.ok) {
               throw new Error("Network response was not ok");

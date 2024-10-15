@@ -21,7 +21,7 @@ export default function RegisterUser() {
 
     try {
       const response = await fetch(
-        "https://irtqai-api.onrender.com/api/v1/auth/register",
+        "https://irtaqi-api-gngp.onrender.com/api/v1/auth/register",
         {
           method: "POST",
           headers: {

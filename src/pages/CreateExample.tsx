@@ -41,7 +41,7 @@ export default function CreateExample() {
 
     try {
       const response = await fetch(
-        "https://irtqai-api.onrender.com/api/v1/verse",
+        "https://irtaqi-api-gngp.onrender.com/api/v1/verse",
         {
           method: "POST",
           headers: {

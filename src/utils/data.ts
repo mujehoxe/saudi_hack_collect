@@ -3,7 +3,7 @@ import { ILoginInput, ISideBarItem, IVerse } from "./types";
 export const TOKEN_KEY = "token";
 // export const BASE_URL = "http://localhost:5000/";
 // export const BASE_URL = "http://192.168.232.181:5000/";
-export const BASE_URL = "https://irtqai-api.onrender.com/api/v1/";
+export const BASE_URL = "https://irtaqi-api-gngp.onrender.com/api/v1/";
 
 export const LOGIN_FORM: ILoginInput[] = [
   {
